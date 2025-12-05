@@ -1,0 +1,16 @@
+{
+  "name": "aura-api",
+  "version": "1.0.0",
+  "description": "Public AURA API relay - accessible via GitHub",
+  "main": "api/think.js",
+  "scripts": {
+    "dev": "vercel dev"
+  },
+  "keywords": [
+    "aura",
+    "api",
+    "relay"
+  ],
+  "license": "MIT"
+}
+
