@@ -1,0 +1,7 @@
+{
+  "buildCommand": "",
+  "outputDirectory": ".",
+  "devCommand": "npx wrangler pages dev",
+  "installCommand": "npm install"
+}
+

@@ -4,24 +4,44 @@ Public GitHub repository that provides a relay to the AURA API. Claude can acces
 
 ## Quick Deploy
 
-### Option 1: Vercel (Recommended)
+### Option 1: Cloudflare Pages with Custom Domain (Recommended)
 
-1. **Fork or create this repo** (make it public)
-2. **Connect to Vercel:**
+1. **Connect to Cloudflare Pages:**
+   - Go to Cloudflare Dashboard → Pages
+   - "Create a project" → "Connect to Git"
+   - Select `robbob-tech/aura` repository
+   - Build settings:
+     - **Framework preset:** None
+     - **Build command:** (leave empty)
+     - **Build output directory:** `.` (root)
+   - Click "Save and Deploy"
+
+2. **Add Custom Domain:**
+   - In Pages project → "Custom domains"
+   - Add your custom domain (e.g., `aura-api.yourdomain.com`)
+   - Cloudflare will automatically configure SSL
+
+3. **Get your URL:**
+   ```
+   https://aura-api.yourdomain.com/api/think
+   ```
+
+### Option 2: Vercel
+
+1. **Connect to Vercel:**
    - Go to [vercel.com](https://vercel.com)
-   - "Add New Project" → Import this GitHub repo
+   - "Add New Project" → Import `robbob-tech/aura` repo
    - Deploy (no build needed)
 3. **Get your URL:**
    ```
    https://aura.vercel.app/api/think
    ```
 
-### Option 2: Netlify
+### Option 3: Netlify
 
-1. **Fork or create this repo** (make it public)
-2. **Connect to Netlify:**
+1. **Connect to Netlify:**
    - Go to [netlify.com](https://netlify.com)
-   - "Add new site" → Import this GitHub repo
+   - "Add new site" → Import `robbob-tech/aura` repo
    - Deploy
 3. **Get your URL:**
    ```
